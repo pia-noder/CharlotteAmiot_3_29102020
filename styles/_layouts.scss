@@ -1,0 +1,85 @@
+header{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.header-flex{
+    justify-content: flex-start;
+    align-items: center;
+
+    a{
+        width: 40%;
+        padding-left: 2rem;
+        i{
+            font-size: 1.2rem;
+        }
+    }
+    img{
+        width: 20%;
+       
+    }
+
+}
+/*Création des menus des restaurents*/
+
+
+/*Footer*/
+footer{
+    width: 100%;
+}
+ul{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    color: $white;
+    background-color:$black;
+    padding:15px;
+}
+svg{
+    width: 100%;
+    height: auto;
+    fill:$white;
+    
+    path{
+        fill:$white; 
+    }
+}
+li{
+    a{
+        color:$white;
+        i{
+            margin-right:10px;
+        }
+    }
+}
+
+
+@media(max-width:768px){
+ul{
+    display:flex;
+    flex-direction: column;
+    justify-content: none;
+    align-items: flex-start;
+    color: $white;
+    background-color:$black;
+    padding:15px;
+}
+svg{
+    width: 60%;
+    height: auto;
+    fill:$white; 
+    path{
+        fill:$white; 
+    }
+}
+li{
+    margin-top:5px;
+    a{
+        color:$white;
+        i{
+            margin-right:10px;
+        }
+    }
+}
+
+}
