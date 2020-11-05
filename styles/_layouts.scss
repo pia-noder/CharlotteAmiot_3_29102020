@@ -4,6 +4,7 @@ header{
     margin-top: 10px;
 }
 .header-flex{
+    padding-top: 1rem;
     justify-content: flex-start;
     align-items: center;
 
@@ -20,8 +21,187 @@ header{
     }
 
 }
+@media(max-width:768px){
+    .header-flex{
+        a{
+            width: 30%;
+        }
+        img{
+            width: 40%;
+            min-width: 150px;
+        }
+    }
+}
 /*Création des menus des restaurents*/
+.menu-prev{
+    margin-top: 2rem;
+    display:flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    border: transparent;
+}
+.menu-heading{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    background-color: $color-quaternary;
+    border-radius: 100px 100px 0 0;
+    width: 50%;
+    margin-left:1rem;
+    padding: 2rem 0 1rem 0;
+    border: transparent;
+    h1{
+         width: 50%;
+         font-size: 1.7rem;
+    }
+    
+     #heart{
+                width: 20%;
+                background-color: $color-quaternary;
+            }
+        
+}
 
+
+.resto-lafrançaise{
+    background-image: url(../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+    background-size: 100% 100%;
+    width: 100%;
+    height: 500px;
+    border: transparent;
+}
+@media (max-width:1024px){
+    .menu-heading{
+        justify-content: space-between;
+        width: 100%;
+        margin-left:0;
+        h1{
+            margin-left: 4rem;
+        }
+        #heart{
+            margin-right: 4rem;
+        }
+    }
+}
+@media(max-width:480px){
+    .menu-heading{
+        h1{
+            font-size: 1.2rem;
+            margin-left: 2rem;
+        }
+        #heart{
+            margin-right: 1.5rem;
+        }
+    }
+}
+/*Les différentes entrées du menu*/
+.menu-flex{
+    display:flex;
+    justify-content: space-between;
+    padding:5rem 2rem;
+    background-color: $color-quaternary;
+    width: 100%;
+}
+@media (max-width:1024px){
+    .menu-flex{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0 0.5rem;
+    }
+}
+
+.menu-entree{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+}
+.btn-menu{
+    width: 100%;
+    border: transparent;
+    margin:1rem 0;
+    &:focus .menu-prev-grid{
+    animation: animation-check 0.3s forwards;
+    -webkit-animation: animation-check 0.3s forwards;
+  }
+}
+.btn-menu-1{
+    animation:animation-appear 0.5s forwards;
+    transform:translateY(-50px);
+     opacity:0
+}
+.btn-menu-2{
+    animation:animation-appear 0.5s forwards;
+    animation-delay:0.3s;
+     transform:translateY(-50px);
+      opacity:0
+}
+.btn-menu-3{
+    animation:animation-appear 0.5s forwards;
+    animation-delay:0.6s;
+     transform:translateY(-50px);
+      opacity:0
+}
+.menu-prev-grid{
+    background-color: $white;
+    border-radius: 15px;
+    width: 100%;
+    min-width: 300px;
+    overflow: hidden;
+    display:grid;
+    grid-template-columns: 75% 25% 15%;
+    grid-template-rows:35px 35px ;
+    grid-template-areas:"heading heading check"
+    "description price check";
+    h4{
+        grid-area: heading;
+        font-size: 1rem;
+        align-self: center;
+        justify-self: flex-start;
+        padding: 1rem  0 0 1rem;
+    }
+    .description{
+        grid-area: description;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0 0 1rem 1rem;
+    }
+    .price{
+        grid-area: price;
+        align-self: center;
+        font-weight: bold;
+    }
+    figure{
+        grid-area: check;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $color-tertiary;
+        color: $white;
+        height: 100%;
+    }
+}
+@media (min-width:480px) and (max-width:1024px){
+    .menu-prev-grid{
+        min-width: 450px;
+        
+    }
+    .menu-entree{
+        width: 90%;
+    }
+}
+@media(max-width:480px){
+    .menu-entree{
+        width: 95%;
+    }
+    .menu-flex{
+        padding: 0;
+    }
+}
 
 /*Footer*/
 footer{

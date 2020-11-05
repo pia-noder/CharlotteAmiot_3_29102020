@@ -1,4 +1,4 @@
-button{
+.btn{
     padding: 10px 15px 10px 15px;
     margin: 10px 0;
     font-size: 1.3rem;
@@ -53,4 +53,16 @@ button{
     -webkit-background-clip: text;
     color:transparent;
     transition: 0.4s;
+}
+.menu-part{
+    margin-bottom: 2rem;
+    &::after{
+        background: none repeat scroll 0 0 $color-tertiary;
+        bottom: -5px;
+        content: "";
+        display: block;
+        height: 3px;
+        position: relative;
+        width: 60px;
+    }
 }

@@ -5,99 +5,105 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/main.css">
-    <title>Offrez-vous un repas 5 étoiles chez vous! - avec Ohmyfood-</title>
+    <title>Restaurant &Agrave; la française</title>
 </head>
 <body>
-    <header>
+    <header class="header-flex">
+        <a href="landing.html"><i class="fas fa-arrow-left"></i></a>
         <img src="../CharlotteAmiot_3_29102020/images/logo/ohmyfood@2x.svg" alt="Logo de la marque Ohmyfood">
     </header>
-        <section>
-            <div id="map">
-                <i class="fas fa-map-marker-alt"></i><div id="place">Paris, Belleville</div>
+    <section class="menu-prev resto-lafrançaise">
+            <div class="menu-heading">
+                <h1>&Agrave; la française</h1>
+                <div id="heart"><i class="far fa-heart icon fa-2x">
+                    <i class="fas fa-heart icon-color"></i>
+                </i></div>
             </div>
-            <div class="preview">
-                <h1>Réservez le menu qui vous convient</h1>
-                <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
-                <button class="btn">Explorer nos restaurants</button>
-            </div>    
-        </section>
-
-        <div class="main">
-        <section class="info">
-            <h2>Fonctionnement</h2>
-            <div id="info-flex">
-                <div class="steps">
-                    <figure class="number">1</figure>
-                    <p><i class="fas fa-mobile-alt fa-color"></i>Choississez un restaurant</p>
-                </div>
-                <div class="steps">
-                    <figure class="number">2</figure>
-                    <p><i class="fas fa-list-ul fa-color"></i>Composez votre menu</p>
-                </div>
-                <div class="steps">
-                    <figure class="number">3</figure>
-                    <p><i class="fas fa-store fa-color"></i>Dégustez au restaurant</p>
-                </div>
-            </div>
-        </div>
-        </section>
-        <section class="resto-bloc">
-            <h2>Restaurants</h2>
-            <div id="resto-grid">
-                <a class="resto-prev1 resto-prev__grid" href="page-laPalette.html">
-                        <div class="resto__image resto__image--1">
-                            <div class="new-not"><p>Nouveau</p></div>
-                        </div>
-                        <div class="resto-info">
-                            <h4>La palette du goût</h4>
-                            <p class="city">Ménilmontant</p>
-                        </div>
-                        <div id="heart"><i class="far fa-heart icon fa-2x">
-                            <i class="fas fa-heart icon-color"></i>
-                        </i></div>
-                    
-                </a>
-                <a class="resto-prev2 resto-prev__grid" href="page-laPalette.html">
-                        <div class="resto__image resto__image--2">
-                            <div class="new-not"><p>Nouveau</p></div>
-                        </div>
-                        <div class="resto-info">
-                            <h4>La note enchantée</h4>
-                            <p class="city">Charonne</p>
-                        </div>
-                        <div id="heart"><i class="far fa-heart icon fa-2x">
-                            <i class="fas fa-heart icon-color"></i>
-                        </i></div>
-                </a>
-                <a class="resto-prev3 resto-prev__grid" href="page-laPalette.html">
-                        <div class="resto__image resto__image--3">
-                        </div>
-                        <div class="resto-info">
-                            <h4>&Agrave; la française</h4>
-                            <p class="city">Cité Rouge</p>
-                        </div>
-                        <div id="heart"><i class="far fa-heart icon fa-2x">
-                            <i class="fas fa-heart icon-color"></i>
-                        </i></div>
-                    
-                </a>
-                <a class="resto-prev4 resto-prev__grid" href="page-laPalette.html">
-                        <div class="resto__image resto__image--4">
-                        </div>
-                        <div class="resto-info">
-                            <h4>Le délice des sens</h4>
-                            <p class="city">Folie-Méricourt</p>
-                        </div>
-                        <div id="heart"><i class="far fa-heart icon fa-2x">
-                            <i class="fas fa-heart icon-color"></i>
-                        </i></div>
-                    
-                </a>
-                
-            </div>
-        </section>
-    
-    <footer>
+    </section>
+    <section class="menu-flex">
+        <aside class="menu-entree"><!--Flex qui va organisé les entrées entre elles-->
+            <h2 class="menu-part">ENTREES</h2>
+            <button class="btn-menu btn-menu-1"><!--btn qui ne contient rien juste pour permettre de cliquer-->
+                <span class="menu-prev-grid"><!--Span qui permet de créer un display grid pour structurer l'intérieur de l'élément-->
+                    <h4>Tartare de poulpe acidulé</h4>
+                    <p class="description">Aux zests d'orange</p>
+                    <p class="price">25€</p>
+                    <figure><i class="fas fa-check-circle fa-lg"></i></figure>
+                </span>
+            </button>
+            <button class="btn-menu btn-menu-2">
+                <span class="menu-prev-grid">
+                    <h4>Velouté de légumes d'antan</h4>
+                    <p class="description">Carotte, panais, topinambour</p>
+                    <p class="price">35€</p>
+                    <figure><i class="fas fa-check-circle fa-lg"></i></figure>
+                </span>
+            </button>
+            <button class="btn-menu btn-menu-3">
+                <span class="menu-prev-grid">
+                    <h4>Soupe à l'oignon</h4>
+                    <p class="description">Revisitée</p>
+                    <p class="price">20€</p>
+                    <figure><i class="fas fa-check-circle fa-lg"></i></figure>
+                </span>
+            </button>
+        </aside>
+        <aside class="menu-entree"><!--Flex qui va organisé les entrées entre elles-->
+            <h2 class="menu-part">PLATS</h2>
+            <button class="btn-menu btn-menu-1"><!--btn qui ne contient rien juste pour permettre de cliquer-->
+                <span class="menu-prev-grid"><!--Span qui permet de créer un display grid pour structurer l'intérieur de l'élément-->
+                    <h4>Coquilles Saint-Jacques</h4>
+                    <p class="description">Accompagnées d'une purée de panais</p>
+                    <p class="price">40€</p>
+                    <figure><i class="fas fa-check-circle fa-lg"></i></figure>
+                </span>
+            </button>
+            <button class="btn-menu btn-menu-2">
+                <span class="menu-prev-grid">
+                    <h4>Magret de canard</h4>
+                    <p class="description">Et parmentier de pommes de terre</p>
+                    <p class="price">35€</p>
+                    <figure><i class="fas fa-check-circle fa-lg"></i></figure>
+                </span>
+            </button>
+            <button class="btn-menu btn-menu-3">
+                <span class="menu-prev-grid">
+                    <h4>Pigeonneau d’Ille-et-Vilaine</h4>
+                    <p class="description">Sur son lit de gnocchis aux légumes</p>
+                    <p class="price">44€</p>
+                    <figure><i class="fas fa-check-circle fa-lg"></i></figure>
+                </span>
+            </button>
+        </aside>
+        <aside class="menu-entree"><!--Flex qui va organisé les entrées entre elles-->
+            <h2 class="menu-part">DESSERTS</h2>
+            <button class="btn-menu btn-menu-1"><!--btn qui ne contient rien juste pour permettre de cliquer-->
+                <span class="menu-prev-grid"><!--Span qui permet de créer un display grid pour structurer l'intérieur de l'élément-->
+                    <h4>Pétales de violettes glacés</h4>
+                    <p class="description">Et purée de noisettes</p>
+                    <p class="price">18€</p>
+                    <figure><i class="fas fa-check-circle fa-lg"></i></figure>
+                </span>
+            </button>
+            <button class="btn-menu btn-menu-2">
+                <span class="menu-prev-grid">
+                    <h4>Fondant au chocolat</h4>
+                    <p class="description">Revisité</p>
+                    <p class="price">22€</p>
+                    <figure><i class="fas fa-check-circle fa-lg"></i></figure>
+                </span>
+            </button>
+            <button class="btn-menu btn-menu-3">
+                <span class="menu-prev-grid">
+                    <h4>Millefeuille croustillant</h4>
+                    <p class="description">Myrtilles et pâte d’amande</p>
+                    <p class="price">23€</p>
+                    <figure><i class="fas fa-check-circle fa-lg"></i></figure>
+                </span>
+            </button>
+        </aside>
+    </section>
+     <footer>
         <ul>
         <li><figure>
             <svg width="150" height="35" viewBox="0 0 196 34" fill="none" xmlns="http://www.w3.org/2000/svg">
