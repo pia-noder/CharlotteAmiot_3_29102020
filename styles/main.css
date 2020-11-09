@@ -397,6 +397,30 @@ a {
   width: 60px;
 }
 
+form {
+  position: absolute;
+  left: 0;
+  top: 0;
+  visibility: hidden;
+  width: 100%;
+}
+
+form i {
+  position: absolute;
+  top: 1.1rem;
+  left: 2rem;
+  color: #c2c0c0;
+}
+
+form input {
+  border: 2px solid #9356dc;
+  height: 100%;
+  width: 100%;
+  font-size: 1.5rem;
+  padding: 0.8rem 4rem;
+  background-color: #f2f2f2;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -871,6 +895,7 @@ li a i {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -882,6 +907,10 @@ li a i {
 
 #map i {
   margin-right: 10px;
+}
+
+#map:hover > form {
+  visibility: visible;
 }
 
 #info-flex {

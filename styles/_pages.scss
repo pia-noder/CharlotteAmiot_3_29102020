@@ -45,6 +45,7 @@
 }
 #map{
     display: flex;
+    position: relative;
     justify-content: center;
     margin-top: 20px;
     padding:15px;
@@ -53,7 +54,11 @@
     i{
         margin-right: 10px;
     }
+    &:hover > form{
+        visibility: visible;
+    }
 }
+
 #info-flex{
     display:flex;
     justify-content: space-around;
