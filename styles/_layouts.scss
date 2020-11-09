@@ -56,7 +56,7 @@ header{
          margin-left: 2rem;
     }
     
-     #heart{
+     .heart{
                 width: 20%;
                 background-color: $color-quaternary;
                 margin-right: 2rem;
@@ -101,7 +101,7 @@ header{
         h1{
             margin-left: 2rem;
         }
-        #heart{
+        .heart{
             margin-right: 2rem;
         }
     }
@@ -117,7 +117,7 @@ header{
             font-size: 1.5rem;
             margin-left: 2rem;
         }
-        #heart{
+        .heart{
             margin-right: 1.5rem;
         }
     }
@@ -274,7 +274,7 @@ li{
 ul{
     display:flex;
     flex-direction: column;
-    justify-content: none;
+    justify-content: center;
     align-items: flex-start;
     color: $white;
     background-color:$black;
