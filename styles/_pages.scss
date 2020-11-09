@@ -39,6 +39,7 @@
     text-align: center;
     padding: 20px;
     background-color:$color-quaternary;
+
     p{
         margin: 10px 0;
     }
@@ -48,7 +49,7 @@
     position: relative;
     justify-content: center;
     margin-top: 20px;
-    padding:15px;
+    padding:15px 0;
     background-color: $color-quinary;
     font-size: 1.5rem;
     i{
@@ -58,7 +59,9 @@
         visibility: visible;
     }
 }
-
+.info{
+    margin: 30px;
+}
 #info-flex{
     display:flex;
     justify-content: space-around;

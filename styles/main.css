@@ -230,7 +230,7 @@ body {
 }
 
 .main {
-  margin: 30px;
+  margin: 0;
 }
 
 h1 {
@@ -323,7 +323,7 @@ a {
   padding: 1rem 2rem;
 }
 
-#heart {
+.heart {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -900,7 +900,7 @@ li a i {
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 20px;
-  padding: 15px;
+  padding: 15px 0;
   background-color: #c2c0c0;
   font-size: 1.5rem;
 }
@@ -911,6 +911,10 @@ li a i {
 
 #map:hover > form {
   visibility: visible;
+}
+
+.info {
+  margin: 30px;
 }
 
 #info-flex {
