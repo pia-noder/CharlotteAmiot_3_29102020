@@ -42,7 +42,7 @@ header{
 }
 .menu-heading{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items:center;
     background-color: $color-quaternary;
     border-radius: 100px 100px 0 0;
@@ -53,11 +53,13 @@ header{
     h1{
          width: 50%;
          font-size: 1.7rem;
+         margin-left: 2rem;
     }
     
      #heart{
                 width: 20%;
                 background-color: $color-quaternary;
+                margin-right: 2rem;
             }
         
 }
@@ -97,17 +99,22 @@ header{
         width: 100%;
         margin-left:0;
         h1{
-            margin-left: 4rem;
+            margin-left: 2rem;
         }
         #heart{
-            margin-right: 4rem;
+            margin-right: 2rem;
         }
+    }
+}
+@media (max-width:768px){
+    .menu-prev{
+        height: 300px;
     }
 }
 @media(max-width:480px){
     .menu-heading{
         h1{
-            font-size: 1.2rem;
+            font-size: 1.5rem;
             margin-left: 2rem;
         }
         #heart{
@@ -119,7 +126,7 @@ header{
 .menu-flex{
     display:flex;
     justify-content: space-between;
-    padding:5rem 2rem;
+    padding:5rem  2rem 1rem 2rem;
     background-color: $color-quaternary;
     width: 100%;
 }
@@ -186,7 +193,7 @@ header{
         font-size: 1.1rem;
         align-self: center;
         justify-self: flex-start;
-        padding: 1rem  0 0 1rem;
+        padding: 1rem  0 0.5rem 1rem;
     }
     .description{
         grid-area: description;

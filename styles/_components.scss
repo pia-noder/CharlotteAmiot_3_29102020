@@ -6,7 +6,6 @@
     color: $white;
     border:none;
     background: linear-gradient(355deg, rgba(147,86,220,1) 2%, rgba(255,121,218,1) 99%);
-    /*background: linear-gradient(180deg, rgba(255,121,218,1) 45%, rgba(147,86,220,1) 100%);*/
     cursor: pointer;
     -webkit-box-shadow: 5px 7px 24px -5px rgba(0,0,0,0.84); 
     box-shadow: 5px 7px 24px -5px rgba(0,0,0,0.84);
@@ -15,7 +14,7 @@
 .btn:hover{
     -webkit-box-shadow: 5px 7px 24px 1px rgba(0,0,0,0.84);
     box-shadow: 5px 7px 24px 1px rgba(0,0,0,0.84);
-    transform: scale(1.1);
+    filter: brightness(110%);
 }
 @media (max-width:1024px){
     button{
@@ -26,7 +25,7 @@
     display: flex;
     justify-content: center;
     background-color: $color-quaternary;
-    padding-top: 20px;
+    
     padding-bottom: 80px;
     .btn{
         padding: 1rem 2rem;
