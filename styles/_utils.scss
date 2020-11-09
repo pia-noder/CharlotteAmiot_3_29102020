@@ -74,3 +74,22 @@ $black:#000;
       opacity:1;
     }
   }
+  /*aniamtion du loader*/
+  @keyframes animation-rotate{
+    to{
+      transform:rotate(360deg);
+    }
+  }
+  @keyframes grow{
+    50%{
+        transform: scale(1);
+    }
+  }
+@keyframes animation-loader{
+    from{
+       transform: scale(1);
+    }
+    to{
+      transform: scale(0);
+    }
+}
