@@ -1123,7 +1123,8 @@ li a i {
 .resto-prev__grid {
   display: -ms-grid;
   display: grid;
-  grid-template: 150px 75px;
+  -ms-grid-columns: 90% 10%;
+      grid-template-columns: 90% 10%;
   -ms-grid-rows: 250px 75px;
       grid-template-rows: 250px 75px;
       grid-template-areas: "images images" "info heart";

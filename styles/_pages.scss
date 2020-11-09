@@ -214,7 +214,7 @@
 }
 .resto-prev__grid{
    display:grid;
-   grid-template: 150px 75px;
+   grid-template-columns: 90% 10%;
    grid-template-rows: 250px 75px;
    grid-template-areas: "images images"
    "info heart";
