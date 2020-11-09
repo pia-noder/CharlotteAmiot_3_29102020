@@ -5,25 +5,25 @@
     grid-template-columns: 75% 25% 15%;
   }
   12.5% {
-    grid-template-columns: 73.1% 25% 15%;
+    grid-template-columns: 73% 25% 15%;
   }
   25% {
-    grid-template-columns: 0.71 0.25% 25% 15%;
+    grid-template-columns: 71% 25% 15%;
   }
   37.5% {
-    grid-template-columns: 69.4% 25% 15%;
+    grid-template-columns: 69% 25% 15%;
   }
   50% {
-    grid-template-columns: 67.5% 25% 15%;
+    grid-template-columns: 67% 25% 15%;
   }
   62.5% {
-    grid-template-columns: 65.6% 25% 15%;
+    grid-template-columns: 65% 25% 15%;
   }
   75% {
-    grid-template-columns: 63.75% 25% 15%;
+    grid-template-columns: 64% 25% 15%;
   }
   87.5% {
-    grid-template-columns: 61.9% 25% 15%;
+    grid-template-columns: 62% 25% 15%;
   }
   100% {
     grid-template-columns: 60% 25% 15%;
@@ -35,32 +35,32 @@
         grid-template-columns: 75% 25% 15%;
   }
   12.5% {
-    -ms-grid-columns: 73.1% 25% 15%;
-        grid-template-columns: 73.1% 25% 15%;
+    -ms-grid-columns: 73% 25% 15%;
+        grid-template-columns: 73% 25% 15%;
   }
   25% {
-    -ms-grid-columns: 0.71 0.25% 25% 15%;
-        grid-template-columns: 0.71 0.25% 25% 15%;
+    -ms-grid-columns: 71% 25% 15%;
+        grid-template-columns: 71% 25% 15%;
   }
   37.5% {
-    -ms-grid-columns: 69.4% 25% 15%;
-        grid-template-columns: 69.4% 25% 15%;
+    -ms-grid-columns: 69% 25% 15%;
+        grid-template-columns: 69% 25% 15%;
   }
   50% {
-    -ms-grid-columns: 67.5% 25% 15%;
-        grid-template-columns: 67.5% 25% 15%;
+    -ms-grid-columns: 67% 25% 15%;
+        grid-template-columns: 67% 25% 15%;
   }
   62.5% {
-    -ms-grid-columns: 65.6% 25% 15%;
-        grid-template-columns: 65.6% 25% 15%;
+    -ms-grid-columns: 65% 25% 15%;
+        grid-template-columns: 65% 25% 15%;
   }
   75% {
-    -ms-grid-columns: 63.75% 25% 15%;
-        grid-template-columns: 63.75% 25% 15%;
+    -ms-grid-columns: 64% 25% 15%;
+        grid-template-columns: 64% 25% 15%;
   }
   87.5% {
-    -ms-grid-columns: 61.9% 25% 15%;
-        grid-template-columns: 61.9% 25% 15%;
+    -ms-grid-columns: 62% 25% 15%;
+        grid-template-columns: 62% 25% 15%;
   }
   100% {
     -ms-grid-columns: 60% 25% 15%;
