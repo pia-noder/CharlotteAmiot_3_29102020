@@ -345,7 +345,7 @@ a {
 .icon-heart path {
   fill: transparent;
   stroke-width: 5px;
-  stroke: 10;
+  /*stroke: 10;*/
   stroke: #000;
 }
 
