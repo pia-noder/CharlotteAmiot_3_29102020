@@ -323,66 +323,86 @@ a {
   padding: 1rem 2rem;
 }
 
-.heart {
+.icon-heart {
+  position: relative;
   width: 100%;
+  min-width: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #fff;
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-  grid-area: heart;
-  border-radius: 0 0 10px 0;
 }
 
-.icon, .icon-color {
-  margin-right: 2rem;
+.icon-heart svg {
+  width: 50%;
 }
 
-.icon {
-  position: relative;
-  z-index: 1;
+.icon-heart path {
+  fill: transparent;
+  stroke-width: 5px;
+  stroke: 10;
+  stroke: #000;
 }
 
-.icon-color {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
-  background: linear-gradient(#ff79da, #9356dc);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  visibility: hidden;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  -webkit-transition: 0.3s ease;
-  transition: 0.3s ease;
+.color1 {
+  stop-color: #9356dc;
 }
 
-.icon:hover .icon-color {
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  visibility: visible;
+.color2 {
+  stop-color: #ff79da;
 }
 
-.icon:hover {
-  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
-  background: linear-gradient(#ff79da, #9356dc);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+.icon-heart path:hover {
+  fill: url(#g1);
+  stroke: #9356dc;
 }
 
+/*.heart
+{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: $white;
+    grid-area:heart;
+    border-radius:0 0 10px 0;
+}
+.icon, .icon-color{
+    margin-right:2rem;
+}
+.icon{
+    position: relative;
+    z-index: 1;
+}
+.icon-color{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: linear-gradient($color-secondary, $color-primary);
+    background-clip:text;
+    -webkit-background-clip:text;
+    color:transparent;
+    visibility:hidden;
+    transform: scale(0);
+    transition: 0.3s ease;
+}
+.icon:hover .icon-color{
+    transform:scale(1);
+    visibility: visible;
+}
+.icon:hover{
+    background: linear-gradient($color-secondary, $color-primary);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color:transparent;
+    transition: 0.4s;
+}*/
 .menu-part {
   margin-bottom: 2rem;
 }
@@ -504,8 +524,8 @@ header {
   margin-left: 2rem;
 }
 
-.menu-heading .heart {
-  width: 20%;
+.menu-heading .icon-heart {
+  /*width: 20%;*/
   background-color: #f2f2f2;
   margin-right: 2rem;
 }
@@ -553,7 +573,7 @@ header {
   .menu-heading h1 {
     margin-left: 2rem;
   }
-  .menu-heading .heart {
+  .menu-heading .icon-heart {
     margin-right: 2rem;
   }
 }
@@ -569,7 +589,7 @@ header {
     font-size: 1.5rem;
     margin-left: 2rem;
   }
-  .menu-heading .heart {
+  .menu-heading .icon-heart {
     margin-right: 1.5rem;
   }
 }
@@ -1027,6 +1047,7 @@ li a i {
   grid-gap: 3rem;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  background-color: #fff;
 }
 
 .resto-prev1, .resto-prev2 {
@@ -1123,10 +1144,10 @@ li a i {
 .resto-prev__grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 90% 10%;
-      grid-template-columns: 90% 10%;
-  -ms-grid-rows: 250px 75px;
-      grid-template-rows: 250px 75px;
+  -ms-grid-columns: 80% 20%;
+      grid-template-columns: 80% 20%;
+  -ms-grid-rows: 250px 80px;
+      grid-template-rows: 250px 80px;
       grid-template-areas: "images images" "info heart";
   border-radius: 10px;
   box-shadow: 7px 7px 10px 0px #656565;
@@ -1193,8 +1214,8 @@ li a i {
   border-radius: 0 0 0 10px;
 }
 
-.heart {
-  width: 100%;
+.icon-heart {
+  /*width:100%%;*/
   background-color: #fff;
   -ms-grid-row: 2;
   -ms-grid-column: 2;

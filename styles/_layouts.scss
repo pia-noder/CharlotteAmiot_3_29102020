@@ -56,8 +56,8 @@ header{
          margin-left: 2rem;
     }
     
-     .heart{
-                width: 20%;
+     .icon-heart{
+                /*width: 20%;*/
                 background-color: $color-quaternary;
                 margin-right: 2rem;
             }
@@ -101,7 +101,7 @@ header{
         h1{
             margin-left: 2rem;
         }
-        .heart{
+        .icon-heart{
             margin-right: 2rem;
         }
     }
@@ -117,7 +117,7 @@ header{
             font-size: 1.5rem;
             margin-left: 2rem;
         }
-        .heart{
+        .icon-heart{
             margin-right: 1.5rem;
         }
     }

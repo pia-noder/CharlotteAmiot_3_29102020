@@ -144,6 +144,7 @@
    "resto2 resto4" ;
    grid-gap:3rem;
    justify-content: space-around;
+   background-color: $white;
 }
 .resto-prev1, .resto-prev2{
     width: 80%;
@@ -214,8 +215,8 @@
 }
 .resto-prev__grid{
    display:grid;
-   grid-template-columns: 90% 10%;
-   grid-template-rows: 250px 75px;
+   grid-template-columns: 80% 20%;
+   grid-template-rows: 250px 80px;
    grid-template-areas: "images images"
    "info heart";
    border-radius:10px;
@@ -255,8 +256,8 @@
     padding-left: 1rem;
     border-radius:0 0 0 10px;
 }
-.heart{
-    width: 100%;
+.icon-heart{
+    /*width:100%%;*/
     background-color: $white;
     grid-area:heart;
     border-radius:0 0 10px 0;

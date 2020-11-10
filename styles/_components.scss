@@ -31,8 +31,34 @@
         padding: 1rem 2rem;
     }
 }
-
-.heart
+.icon-heart{
+    position: relative;
+    width:100%;
+    min-width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    svg{
+        width: 50%;
+    }
+    path{
+        fill: transparent;
+        stroke-width: 5px;
+        stroke: 10;
+        stroke: $black;
+    }
+}
+.color1{
+    stop-color: $color-primary;
+}
+.color2{
+    stop-color: $color-secondary;
+}
+.icon-heart path:hover{
+    fill: url(#g1);
+    stroke: $color-primary;
+}
+/*.heart
 {
     width: 100%;
     display: flex;
@@ -72,7 +98,7 @@
     -webkit-background-clip: text;
     color:transparent;
     transition: 0.4s;
-}
+}*/
 .menu-part{
     margin-bottom: 2rem;
     &::after{
