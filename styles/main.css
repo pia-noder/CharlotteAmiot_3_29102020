@@ -1006,7 +1006,7 @@ li a i {
   grid-gap: 3rem;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  background-color: #fff;
+  background-color: #f2f2f2;
 }
 
 .resto-prev1, .resto-prev2 {
