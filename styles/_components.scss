@@ -58,47 +58,7 @@
     fill: url(#g1);
     stroke: $color-primary;
 }
-/*.heart
-{
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    background-color: $white;
-    grid-area:heart;
-    border-radius:0 0 10px 0;
-}
-.icon, .icon-color{
-    margin-right:2rem;
-}
-.icon{
-    position: relative;
-    z-index: 1;
-}
-.icon-color{
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    background: linear-gradient($color-secondary, $color-primary);
-    background-clip:text;
-    -webkit-background-clip:text;
-    color:transparent;
-    visibility:hidden;
-    transform: scale(0);
-    transition: 0.3s ease;
-}
-.icon:hover .icon-color{
-    transform:scale(1);
-    visibility: visible;
-}
-.icon:hover{
-    background: linear-gradient($color-secondary, $color-primary);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color:transparent;
-    transition: 0.4s;
-}*/
+
 .menu-part{
     margin-bottom: 2rem;
     &::after{
