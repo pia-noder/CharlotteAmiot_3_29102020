@@ -55,73 +55,31 @@ header{
          font-size: 1.7rem;
          margin-left: 2rem;
     }
-    
      .icon-heart{
-                width: 20%;
+                width: 10%;
                 background-color: $color-quaternary;
-                margin-right: 2rem;
+                margin-right: 6rem;
             }
-        
 }
 
 
 .resto-lafrançaise{
     background-image: url(../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
-    background-size: 100% 100%;
-    width: 100%;
-    height: 500px;
-    border: transparent;
+    @include heading-menu;
 }
 .resto-laPalette{
     background-image: url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
-    background-size: 100% 100%;
-    width: 100%;
-    height: 500px;
-    border: transparent;
+    @include heading-menu;
 }
 .resto-leDeliceDesSens{
     background-image: url(../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
-    background-size: 100% 100%;
-    width: 100%;
-    height: 500px;
-    border: transparent;
+    @include heading-menu;
 }
 .resto-laNoteEnchantee{
     background-image: url(../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
-    background-size: 100% 100%;
-    width: 100%;
-    height: 500px;
-    border: transparent;
+    @include heading-menu;
 }
-@media (max-width:1024px){
-    .menu-heading{
-        justify-content: space-between;
-        width: 100%;
-        margin-left:0;
-        h1{
-            margin-left: 2rem;
-        }
-        .icon-heart{
-            margin-right: 2rem;
-        }
-    }
-}
-@media (max-width:768px){
-    .menu-prev{
-        height: 300px;
-    }
-}
-@media(max-width:480px){
-    .menu-heading{
-        h1{
-            font-size: 1.5rem;
-            margin-left: 2rem;
-        }
-        .icon-heart{
-            margin-right: 1.5rem;
-        }
-    }
-}
+
 /*Les différentes entrées du menu*/
 .menu-flex{
     display:flex;
@@ -130,16 +88,6 @@ header{
     background-color: $color-quaternary;
     width: 100%;
 }
-@media (max-width:1024px){
-    .menu-flex{
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding: 0 0.5rem;
-    }
-}
-
 .menu-entree{
     margin-top: 2rem;
     display: flex;
@@ -177,15 +125,17 @@ header{
      transform:translateY(-50px);
       opacity:0
 }
+/*englobe chaque élément du menu*/
 .menu-prev-grid{
     background-color: $white;
     border-radius: 15px;
     width: 100%;
     min-width: 300px;
+    padding: 0;
     overflow: hidden;
     display:grid;
     grid-template-columns: 75% 25% 15%;
-    grid-template-rows:35px 35px ;
+    grid-template-rows:30px 30px ;
     grid-template-areas:"heading heading check"
     "description price check";
     h4{
@@ -221,24 +171,6 @@ header{
         height: 100%;
     }
 }
-@media (min-width:480px) and (max-width:1024px){
-    .menu-prev-grid{
-        min-width: 450px;
-        
-    }
-    .menu-entree{
-        width: 90%;
-    }
-}
-@media(max-width:480px){
-    .menu-entree{
-        width: 95%;
-    }
-    .menu-flex{
-        padding: 0;
-    }
-}
-
 /*Footer*/
 footer{
     width: 100%;
@@ -267,35 +199,4 @@ li{
             margin-right:10px;
         }
     }
-}
-
-
-@media(max-width:768px){
-ul{
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    color: $white;
-    background-color:$black;
-    padding:15px;
-}
-svg{
-    width: 60%;
-    height: auto;
-    fill:$white; 
-    path{
-        fill:$white; 
-    }
-}
-li{
-    margin-top:5px;
-    a{
-        color:$white;
-        i{
-            margin-right:10px;
-        }
-    }
-}
-
 }

@@ -7,15 +7,11 @@
     border:none;
     background: linear-gradient(355deg, rgba(147,86,220,1) 2%, rgba(255,121,218,1) 99%);
     cursor: pointer;
-    -webkit-box-shadow: 5px 7px 24px -5px rgba(0,0,0,0.84); 
-    box-shadow: 5px 7px 24px -5px rgba(0,0,0,0.84);
     transform: scale(1);
+    @include btn-shadows;
+    @include btn-hover;
 }
-.btn:hover{
-    -webkit-box-shadow: 5px 7px 24px 1px rgba(0,0,0,0.84);
-    box-shadow: 5px 7px 24px 1px rgba(0,0,0,0.84);
-    filter: brightness(110%);
-}
+
 @media (max-width:1024px){
     button{
         font-size: 1rem;
@@ -25,51 +21,39 @@
     display: flex;
     justify-content: center;
     background-color: $color-quaternary;
-    
     padding-bottom: 80px;
     .btn{
         padding: 1rem 2rem;
     }
 }
-.icon-heart{
-    position: relative;
-    width:100%;
-    min-width: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    svg{
-        width: 50%;
+/*intégration du like*/
+.menu-heading span{
+    background-color: $color-quaternary;
+    margin-right: 3rem;
+}
+span
+{
+    background-color: $white;
+    grid-area:heart;
+    margin:1rem 3rem 0 0;
+    border-radius:0 0 10px 0;
+    
+    .icon-color{
+        transform: scale(0);
+        transition: 0.3s ease;
     }
-    path{
-        fill: transparent;
-        stroke-width: 5px;
-        /*stroke: 10;*/
-        stroke: $black;
-    }
+    &:hover .icon {
+           color: $color-primary;
+            & + .icon-color{
+                transform:scale(1);
+                color:$color-primary;
+            }
+    
+        }
 }
-.color1{
-    stop-color: $color-primary;
-}
-.color2{
-    stop-color: $color-secondary;
-}
-.icon-heart path:hover{
-    fill: url(#g1);
-    stroke: $color-primary;
-}
-
+/*barre sous les titres entree/plat/dessert*/
 .menu-part{
-    margin-bottom: 2rem;
-    &::after{
-        background: none repeat scroll 0 0 $color-tertiary;
-        bottom: -5px;
-        content: "";
-        display: block;
-        height: 3px;
-        position: relative;
-        width: 60px;
-    }
+    @include green-bar;
 }
 form{
     position: absolute;

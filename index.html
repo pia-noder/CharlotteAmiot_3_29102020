@@ -27,109 +27,83 @@
             <div class="preview">
                 <h1>Réservez le menu qui vous convient</h1>
                 <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
-                <button class="btn">Explorer nos restaurants</button>
+                <a href="#restaurant"><button class="btn">Explorer nos restaurants</button></a>
             </div>    
          </section>
 
         
         <section class="info">
             <h2>Fonctionnement</h2>
-            <div id="info-flex">
-                <div class="steps">
+            <div class="info__explain">
+                <div class="info__steps">
                     <figure class="number">1</figure>
                     <p><i class="fas fa-mobile-alt fa-color"></i>Choississez un restaurant</p>
                 </div>
-                <div class="steps">
+                <div class="info__steps">
                     <figure class="number">2</figure>
                     <p><i class="fas fa-list-ul fa-color"></i>Composez votre menu</p>
                 </div>
-                <div class="steps">
+                <div class="info__steps">
                     <figure class="number">3</figure>
                     <p><i class="fas fa-store fa-color"></i>Dégustez au restaurant</p>
                 </div>
             </div>
         </section>
-        <section class="resto-bloc">
+        <section id="restaurant" class="resto-bloc">
             <h2>Restaurants</h2>
             <div id="resto-grid">
-                <a class="resto-prev1 resto-prev__grid" href="page-laPalette.html">
-                        <div class="resto__image resto__image--1">
+                <a class="resto-prev1 resto-prev" href="page-laPalette.html">
+                        <div class="resto-prev__image resto-prev__image--1">
                             <div class="new-not"><p>Nouveau</p></div>
                         </div>
-                        <div class="resto-info">
+                        <div class="resto-prev__info">
                             <h4>La palette du goût</h4>
                             <p class="city">Ménilmontant</p>
                         </div>
-                        <div class="icon-heart"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" 
-                            class="svg-inline--fa fa-heart fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="-10 -10 542 542">
-                            <path fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 
-                            104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 
-                            0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"></path>
-                            <linearGradient id="g1">
-                                <stop offset="0" class="color1"/>
-                                <stop offset="1" class="color2"/>
-                            </linearGradient>
-                        </svg></div>
+                        <span class="fa-stack">
+                            <i class="far fa-heart icon fa-stack-2x"></i>
+                            <i class="fas fa-heart icon-color fa-stack-2x"></i>
+                        </span>
                     
                 </a>
-                <a class="resto-prev2 resto-prev__grid" href="page-laNoteEnchantee.html">
-                        <div class="resto__image resto__image--2">
+                <a class="resto-prev2 resto-prev" href="page-laNoteEnchantee.html">
+                        <div class="resto-prev__image resto-prev__image--2">
                             <div class="new-not"><p>Nouveau</p></div>
                         </div>
-                        <div class="resto-info">
+                        <div class="resto-prev__info">
                             <h4>La note enchantée</h4>
                             <p class="city">Charonne</p>
                         </div>
-                        <div class="icon-heart"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" 
-                            class="svg-inline--fa fa-heart fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="-10 -10 542 542">
-                            <path fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 
-                            104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 
-                            0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"></path>
-                            <linearGradient id="g1">
-                                <stop offset="0" class="color1"/>
-                                <stop offset="1" class="color2"/>
-                            </linearGradient>
-                        </svg></div>
+                        <span class="fa-stack">
+                            <i class="far fa-heart icon fa-stack-2x"></i>
+                            <i class="fas fa-heart icon-color fa-stack-2x"></i>
+                        </span>
                 </a>
-                <a class="resto-prev3 resto-prev__grid" href="page-laFrançaise.html">
-                        <div class="resto__image resto__image--3">
+                <a class="resto-prev3 resto-prev" href="page-laFrançaise.html">
+                        <div class="resto-prev__image resto-prev__image--3">
                         </div>
-                        <div class="resto-info">
+                        <div class="resto-prev__info">
                             <h4>&Agrave; la française</h4>
                             <p class="city">Cité Rouge</p>
                         </div>
-                        <div class="icon-heart"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" 
-                            class="svg-inline--fa fa-heart fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="-10 -10 542 542">
-                            <path fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 
-                            104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 
-                            0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"></path>
-                            <linearGradient id="g1">
-                                <stop offset="0" class="color1"/>
-                                <stop offset="1" class="color2"/>
-                            </linearGradient>
-                        </svg></div>
+                        <span class="fa-stack">
+                            <i class="far fa-heart icon fa-stack-2x"></i>
+                            <i class="fas fa-heart icon-color fa-stack-2x"></i>
+                        </span>
                     
                 </a>
-                <a class="resto-prev4 resto-prev__grid" href="page-leDeliceDesSens.html">
-                        <div class="resto__image resto__image--4">
+                <a class="resto-prev4 resto-prev" href="page-leDeliceDesSens.html">
+                        <div class="resto-prev__image resto-prev__image--4">
                         </div>
-                        <div class="resto-info">
+                        <div class="resto-prev__info">
                             <h4>Le délice des sens</h4>
                             <p class="city">Folie-Méricourt</p>
                         </div>
-                        <div class="icon-heart"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" 
-                            class="svg-inline--fa fa-heart fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="-10 -10 542 542">
-                            <path fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 
-                            104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 
-                            0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"></path>
-                            <linearGradient id="g1">
-                                <stop offset="0" class="color1"/>
-                                <stop offset="1" class="color2"/>
-                            </linearGradient>
-                        </svg></div>
-                    
+                        <span class="fa-stack">
+                            <i class="far fa-heart icon fa-stack-2x"></i>
+                            <i class="fas fa-heart icon-color fa-stack-2x"></i>
+                        </span>
                 </a>
-                
             </div>
         </section>
         </div>

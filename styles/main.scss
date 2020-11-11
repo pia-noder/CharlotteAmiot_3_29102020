@@ -1,5 +1,8 @@
-@import 'utils';
-@import 'base';
+@import 'utils/keyframes';
+@import 'utils/mixins';
+@import 'utils/variables';
+@import 'base/base';
 @import 'components';
 @import 'layouts';
 @import 'pages';
+@import 'base/mediaQ';

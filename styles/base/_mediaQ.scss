@@ -1,0 +1,117 @@
+/*Adapter le preview au format tablette et mobile*/
+@media(min-width:1500px){
+    .steps{
+        p{
+            font-size: 1.3rem;
+        }
+    }
+}
+@media (max-width:1024px){
+    .menu-heading{
+        justify-content: space-between;
+        width: 100%;
+        margin-left:0;
+        h1{
+            margin-left: 2rem;
+        }
+        .icon-heart{
+            margin-right: 2rem;
+        }
+    }
+    .menu-flex{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 0 0.5rem;
+        }
+}
+@media (min-width:480px) and (max-width:1024px){
+    .menu-prev-grid{
+        min-width: 450px;
+        
+    }
+    .menu-entree{
+        width: 90%;
+    }
+}
+@media (max-width:900px){
+    .info__explain{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-around; 
+        align-items: center;
+        min-height:200px ;
+        .steps{
+            width: 90%;
+        }
+    }
+}
+@media (max-width:768px){
+    .menu-prev{
+        height: 300px;
+    }
+     .resto-bloc{
+        h2{
+            padding-left: 2rem;
+        }
+    }
+    #resto-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 20rem 20rem 20rem 20rem;
+        grid-template-areas: "resto1" "resto2" "resto3" "resto4";
+    }
+    .resto-prev1,.resto-prev2,.resto-prev3, .resto-prev4{
+        width: 90%;
+        justify-self: center;
+    }
+    
+    footer{
+     ul{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        color: $white;
+        background-color:$black;
+        padding:15px;
+    }
+    svg{
+        width: 60%;
+        height: auto;
+        fill:$white; 
+        path{
+            fill:$white; 
+        }
+    }
+    li{
+        margin-top:5px;
+        a{
+            color:$white;
+            i{
+                margin-right:10px;
+            }
+        }
+    }
+} 
+}  
+@media(max-width:480px){
+    .menu-heading{
+        h1{
+            font-size: 1.5rem;
+            margin-left: 2rem;
+        }
+        .icon-heart{
+            margin-right: 1.5rem;
+        }
+    }
+    .menu-entree{
+        width: 95%;
+    }
+    .menu-flex{
+        padding: 0;
+    }
+}
+
+
