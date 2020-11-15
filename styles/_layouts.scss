@@ -55,11 +55,14 @@ header{
          font-size: 1.7rem;
          margin-left: 2rem;
     }
-     .icon-heart{
+     /*.icon-heart{
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 width: 10%;
                 background-color: $color-quaternary;
-                margin-right: 6rem;
-            }
+                
+            }*/
 }
 
 
@@ -140,21 +143,15 @@ header{
     "description price check";
     h4{
         grid-area: heading;
-        font-size: 1.1rem;
-        align-self: center;
-        justify-self: flex-start;
-        padding: 1rem  0 0.5rem 1rem;
+        text-align: start;
+        padding: 0.3rem  0 0.5rem 1rem;
+        @include short;
     }
     .description{
         grid-area: description;
-        display: block;
-        font-size: 1.1rem;
-        padding: 0 0 1rem 1rem;
+        padding: 0.5rem 0 1rem 1rem;
         text-align: start;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        flex-basis:auto;
-        overflow: hidden;
+        @include short;
     }
     .price{
         grid-area: price;

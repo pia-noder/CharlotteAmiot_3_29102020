@@ -7,13 +7,7 @@
 html{
     font-size: 100%;
 }
-body{
-    font-size:1em;
 
-}
-.main{
-    margin: 0;
-}
 h1{
     font-family: $font-title;
     color: $black;
@@ -23,20 +17,26 @@ h2,h3,h4{
     color: $black;
 }
 h1{
-    font-size: 1.5rem;
+    font-size: 1.5em;
 }
 
 h4{
-    font-size: 1rem;
+    font-size: 1.3em;
+}
+.logo{
+    font-family: 'Shrikhand', cursive, sans-serif;
+    color: $white;
+    font-size: 1em;
 }
 @media(min-width:1500px){
     h4{
-        font-size: 1.5rem;
+        font-size: 1.5em;
     }
 }
 p{
     font-family: 'Roboto', sans-serif;
-    color:$black
+    color:$black;
+    font-size: 1em;
 }
 li{
     list-style: none;
@@ -47,10 +47,10 @@ a{
 }
 @media (max-width:1024px){
     h1{
-        font-size:1.1rem;
+        font-size:1.1em;
     }
     p{
-        font-size: 0.8rem;
+        font-size: 0.8em;
     }
 }
 

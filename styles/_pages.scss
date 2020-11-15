@@ -41,6 +41,12 @@
     background-color:$color-quaternary;
     p{
         margin: 10px 0;
+        font-size: 1.5em;
+    }
+    h1{
+        font-family: 'Roboto', sans-serif;
+        font-size: 2em;
+        padding: 0 3rem;
     }
 }
 #map{
@@ -132,64 +138,63 @@
 .resto-prev1, .resto-prev2{
     width: 80%;
     justify-self: flex-end;
-    max-width: 600px;/*Limiter l'étirment horizontal du bloc*/
+    max-width: 500px;/*Limiter l'étirment horizontal du bloc*/
 }
 .resto-prev3, .resto-prev4{
     width: 80%;
     justify-self: flex-start;
-    max-width: 600px;/*Limiter l'étirment horizontal du bloc*/
+    max-width: 500px;/*Limiter l'étirment horizontal du bloc*/
 }
 
 .resto-prev1{ /*pour placer les cartes de chaque restaurant*/
     grid-area:resto1;
 }
 .resto-prev__image--1{
-    background-image: url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
-    background-size: 100% 150%;
-    background-position-y:center ;
+    background-image: url(../images/resize-restaurant/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+    @include images-prev;
 }
 .resto-prev2{
     grid-area: resto2;    
 }
 .resto-prev__image--2{
-    background-image: url(../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
-    background-size: 100% 250%;
-    background-position-y:60% ;
+    background-image: url(../images/resize-restaurant/stil-u2Lp8tXIcjw-unsplash.jpg);
+    @include images-prev;
 }
+
 .resto-prev3{
     grid-area: resto3;
 }
 .resto-prev__image--3{
-    background-image: url(../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
-    background-size: 100% 150%;
-    background-position-y:80%;
+    background-image: url(../images/resize-restaurant/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+    @include images-prev;
 }
+
 
 .resto-prev4{
     grid-area: resto4;
 }
 .resto-prev__image--4{
-    background-image: url(../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
-    background-size:100% 150%;
-    background-position-y:80% ;
+    background-image: url(../images/resize-restaurant/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+    @include images-prev;
 }
+
 
 /*englobe le contenu des cartes*/
 .resto-prev{
     background-color: $white;
    display:grid;
    grid-template-columns: 80% 20%;
-   grid-template-rows: 250px 70px;
+   grid-template-rows: 80% 20%;
    grid-template-areas: "images images"
    "info heart";
    border-radius:10px;
+   height: 350px;
   @include prev-shadows;
   &__image{
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
     grid-area:images;
-    min-height: 10rem;
     border-radius:10px 10px 0 0;
     }
     &__info{

@@ -1,7 +1,7 @@
 .btn{
     padding: 10px 15px 10px 15px;
     margin: 10px 0;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     border-radius: 60px;
     color: $white;
     border:none;
@@ -35,8 +35,9 @@ span
 {
     background-color: $white;
     grid-area:heart;
-    margin:1rem 3rem 0 0;
     border-radius:0 0 10px 0;
+    align-self: center;
+    justify-self: center;
     
     .icon-color{
         transform: scale(0);
@@ -46,7 +47,9 @@ span
            color: $color-primary;
             & + .icon-color{
                 transform:scale(1);
-                color:$color-primary;
+                color:transparent;
+                background:linear-gradient($color-secondary, $color-primary);
+                -webkit-background-clip: text;
             }
     
         }
