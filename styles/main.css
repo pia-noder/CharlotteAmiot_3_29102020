@@ -836,7 +836,7 @@ li a i {
   padding: 15px 30px;
   border-radius: 50px;
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 0.7em;
 }
 
 .info__steps p i {
@@ -1049,6 +1049,9 @@ li a i {
   .menu-heading p {
     font-size: 0.8em;
   }
+  .info__steps {
+    width: 60%;
+  }
   .menu-flex {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1116,6 +1119,12 @@ li a i {
     width: 90%;
     -ms-grid-column-align: center;
         justify-self: center;
+  }
+  .info__steps {
+    width: 100%;
+  }
+  .info p {
+    font-size: 0.6em;
   }
   footer ul {
     display: -webkit-box;

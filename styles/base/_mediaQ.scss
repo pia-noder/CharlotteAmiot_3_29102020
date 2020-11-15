@@ -28,6 +28,12 @@
             font-size: 0.8em;
         }
     }
+    .info{
+        &__steps{
+            width: 60%;
+        }
+    }
+    
     .menu-flex{
         flex-direction: column;
         justify-content: center;
@@ -78,7 +84,14 @@
         width: 90%;
         justify-self: center;
     }
-    
+    .info{
+        &__steps{
+            width: 100%;
+        }
+        p{
+            font-size: 0.6em;
+        }
+    }
     footer{
      ul{
         display:flex;
