@@ -247,7 +247,7 @@ h1 {
 }
 
 h4 {
-  font-size: 1.3em;
+  font-size: 1.1em;
 }
 
 .logo {
@@ -256,16 +256,10 @@ h4 {
   font-size: 1em;
 }
 
-@media (min-width: 1500px) {
-  h4 {
-    font-size: 1.5em;
-  }
-}
-
 p {
   font-family: 'Roboto', sans-serif;
   color: #000;
-  font-size: 1em;
+  font-size: 1.3em;
 }
 
 li {
@@ -275,15 +269,6 @@ li {
 a {
   text-decoration: none;
   color: #000;
-}
-
-@media (max-width: 1024px) {
-  h1 {
-    font-size: 1.1em;
-  }
-  p {
-    font-size: 0.8em;
-  }
 }
 
 .btn {
@@ -480,19 +465,11 @@ header {
   margin-left: 1rem;
   padding: 2rem 0 1rem 0;
   border: transparent;
-  /*.icon-heart{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: 10%;
-                background-color: $color-quaternary;
-                
-            }*/
 }
 
 .menu-heading h1 {
   width: 50%;
-  font-size: 1.7rem;
+  font-size: 2em;
   margin-left: 2rem;
 }
 
@@ -614,8 +591,8 @@ header {
   display: grid;
   -ms-grid-columns: 75% 25% 15%;
       grid-template-columns: 75% 25% 15%;
-  -ms-grid-rows: 30px 30px;
-      grid-template-rows: 30px 30px;
+  -ms-grid-rows: 40px 40px;
+      grid-template-rows: 40px 40px;
       grid-template-areas: "heading heading check" "description price check";
 }
 
@@ -625,7 +602,8 @@ header {
   -ms-grid-column-span: 2;
   grid-area: heading;
   text-align: start;
-  padding: 0.3rem  0 0.5rem 1rem;
+  padding: 0.7rem  0 0.5rem 1rem;
+  font-size: 1.7em;
   display: block;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -640,6 +618,7 @@ header {
   grid-area: description;
   padding: 0.5rem 0 1rem 1rem;
   text-align: start;
+  font-size: 1.5em;
   display: block;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -1047,6 +1026,12 @@ li a i {
   .menu-prev {
     height: 700px;
   }
+  h4 {
+    font-size: 1.5em;
+  }
+  a {
+    font-size: 1.3em;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -1056,12 +1041,13 @@ li a i {
             justify-content: space-between;
     width: 100%;
     margin-left: 0;
-    /*.icon-heart{
-            margin-right: 2rem;
-        }*/
   }
   .menu-heading h1 {
     margin-left: 2rem;
+    font-size: 1.7em;
+  }
+  .menu-heading p {
+    font-size: 0.8em;
   }
   .menu-flex {
     -webkit-box-orient: vertical;
@@ -1161,13 +1147,7 @@ li a i {
 }
 
 @media (max-width: 480px) {
-  .menu-heading {
-    /*.icon-heart{
-            margin-right: 1.5rem;
-        }*/
-  }
   .menu-heading h1 {
-    font-size: 1.5rem;
     margin-left: 2rem;
   }
   .menu-entree {
@@ -1178,6 +1158,15 @@ li a i {
   }
   .resto-prev {
     height: 250px;
+  }
+  .menu-prev-grid h4 {
+    font-size: 1.2em;
+  }
+  .menu-prev-grid .description {
+    font-size: 1.2em;
+  }
+  .menu-prev-grid p {
+    font-size: 1.1em;
   }
 }
 /*# sourceMappingURL=main.css.map */

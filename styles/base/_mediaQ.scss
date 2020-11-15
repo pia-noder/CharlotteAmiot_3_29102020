@@ -8,6 +8,12 @@
     .menu-prev{
         height: 700px;
     }
+    h4{
+        font-size: 1.5em;
+    }
+    a{
+        font-size: 1.3em;
+    }
 }
 @media (max-width:1024px){
     .menu-heading{
@@ -16,10 +22,11 @@
         margin-left:0;
         h1{
             margin-left: 2rem;
+            font-size:1.7em;
         }
-        /*.icon-heart{
-            margin-right: 2rem;
-        }*/
+        p{
+            font-size: 0.8em;
+        }
     }
     .menu-flex{
         flex-direction: column;
@@ -96,12 +103,9 @@
 @media(max-width:480px){
     .menu-heading{
         h1{
-            font-size: 1.5rem;
+            
             margin-left: 2rem;
         }
-        /*.icon-heart{
-            margin-right: 1.5rem;
-        }*/
     }
     .menu-entree{
         width: 95%;
@@ -111,6 +115,17 @@
     }
     .resto-prev{
         height: 250px;
+     }
+     .menu-prev-grid{
+         h4{
+             font-size: 1.2em;
+         }
+         .description{
+             font-size: 1.2em;
+         }
+         p{
+             font-size: 1.1em;
+         }
      }
 }
 

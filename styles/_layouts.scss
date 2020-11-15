@@ -52,17 +52,9 @@ header{
     border: transparent;
     h1{
          width: 50%;
-         font-size: 1.7rem;
+         font-size: 2em;
          margin-left: 2rem;
     }
-     /*.icon-heart{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: 10%;
-                background-color: $color-quaternary;
-                
-            }*/
 }
 
 
@@ -138,19 +130,21 @@ header{
     overflow: hidden;
     display:grid;
     grid-template-columns: 75% 25% 15%;
-    grid-template-rows:30px 30px ;
+    grid-template-rows:40px 40px ;
     grid-template-areas:"heading heading check"
     "description price check";
     h4{
         grid-area: heading;
         text-align: start;
-        padding: 0.3rem  0 0.5rem 1rem;
+        padding: 0.7rem  0 0.5rem 1rem;
+        font-size: 1.7em;
         @include short;
     }
     .description{
         grid-area: description;
         padding: 0.5rem 0 1rem 1rem;
         text-align: start;
+        font-size: 1.5em;
         @include short;
     }
     .price{

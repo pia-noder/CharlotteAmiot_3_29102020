@@ -21,22 +21,18 @@ h1{
 }
 
 h4{
-    font-size: 1.3em;
+    font-size: 1.1em;
 }
 .logo{
     font-family: 'Shrikhand', cursive, sans-serif;
     color: $white;
     font-size: 1em;
 }
-@media(min-width:1500px){
-    h4{
-        font-size: 1.5em;
-    }
-}
+
 p{
     font-family: 'Roboto', sans-serif;
     color:$black;
-    font-size: 1em;
+    font-size: 1.3em;
 }
 li{
     list-style: none;
@@ -45,12 +41,5 @@ a{
     text-decoration: none;
     color: $black;
 }
-@media (max-width:1024px){
-    h1{
-        font-size:1.1em;
-    }
-    p{
-        font-size: 0.8em;
-    }
-}
+
 
