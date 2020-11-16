@@ -228,10 +228,6 @@
           box-sizing: border-box;
 }
 
-html {
-  font-size: 100%;
-}
-
 h1 {
   font-family: "Shrikhand", cursive, sans-serif;
   color: #000;
@@ -271,10 +267,12 @@ a {
   color: #000;
 }
 
+/*pour les éléments format bouton*/
 .btn {
+  max-width: 15em;
   padding: 10px 15px 10px 15px;
   margin: 10px 0;
-  font-size: 1.4rem;
+  font-size: 1.2em;
   border-radius: 60px;
   color: #fff;
   border: none;
@@ -693,7 +691,7 @@ li a i {
   margin-right: 10px;
 }
 
-/*Loader*/
+/*pour le loading spinner*/
 .loader {
   position: fixed;
   z-index: 2;
@@ -743,22 +741,32 @@ li a i {
   box-shadow: 0px 0px 12px 6px #FFAEE8;
 }
 
-/*Carte de présentation des restaurants*/
-.preview {
+/*pour le bouton ancre (renvoie aux restaurants)*/
+.presentation {
   text-align: center;
   padding: 20px;
   background-color: #f2f2f2;
 }
 
-.preview p {
+.presentation p {
   margin: 10px 0;
   font-size: 1.5em;
 }
 
-.preview h1 {
+.presentation h1 {
   font-family: 'Roboto', sans-serif;
   font-size: 2em;
   padding: 0 3rem;
+}
+
+.presentation a {
+  display: inline-block;
+  /*pour pouvoir centrer le lien*/
+  width: 20em;
+}
+
+.presentation a .btn {
+  width: 100%;
 }
 
 #map {
@@ -1026,9 +1034,6 @@ li a i {
   .menu-prev {
     height: 700px;
   }
-  h4 {
-    font-size: 1.5em;
-  }
   a {
     font-size: 1.3em;
   }
@@ -1086,6 +1091,9 @@ li a i {
   }
   .info__explain .steps {
     width: 90%;
+  }
+  .info__explain .steps p {
+    font-size: 1.3em;
   }
 }
 
@@ -1176,6 +1184,9 @@ li a i {
   }
   .menu-prev-grid p {
     font-size: 1.1em;
+  }
+  .presentation a {
+    width: 90%;
   }
 }
 /*# sourceMappingURL=main.css.map */

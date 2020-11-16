@@ -8,9 +8,6 @@
     .menu-prev{
         height: 700px;
     }
-    h4{
-        font-size: 1.5em;
-    }
     a{
         font-size: 1.3em;
     }
@@ -33,7 +30,6 @@
             width: 60%;
         }
     }
-    
     .menu-flex{
         flex-direction: column;
         justify-content: center;
@@ -52,6 +48,9 @@
         min-height:200px ;
         .steps{
             width: 90%;
+            p{
+                font-size: 1.3em;
+            }
         }
     }
 }
@@ -138,6 +137,11 @@
          }
          p{
              font-size: 1.1em;
+         }
+     }
+     .presentation{
+         a{
+             width: 90%;
          }
      }
 }

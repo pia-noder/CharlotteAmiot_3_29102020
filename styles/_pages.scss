@@ -1,4 +1,4 @@
-/*Loader*/
+/*pour le loading spinner*/
 .loader{
     position: fixed;
     z-index: 2;
@@ -34,8 +34,8 @@
     
 }
 
-  /*Carte de présentation des restaurants*/
-.preview{
+  /*pour le bouton ancre (renvoie aux restaurants)*/
+.presentation{
     text-align: center;
     padding: 20px;
     background-color:$color-quaternary;
@@ -47,6 +47,13 @@
         font-family: 'Roboto', sans-serif;
         font-size: 2em;
         padding: 0 3rem;
+    }
+    a{
+        display: inline-block; /*pour pouvoir centrer le lien*/
+        width: 20em;
+        .btn{
+            width: 100%;
+        }
     }
 }
 #map{
