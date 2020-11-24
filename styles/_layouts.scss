@@ -8,29 +8,27 @@ header{
     justify-content: flex-start;
     align-items: center;
 
-    a{
-        width: 40%;
-        padding-left: 2rem;
+   a{
+        width: 10%;
+        padding-left: 1.5rem;
         i{
             font-size: 1.2rem;
         }
     }
-    img{
-        width: 20%;
-       
+    .logo{
+        width: 90%;
+        text-align: center;
+        padding-right: 3em;
     }
 
 }
 @media(max-width:768px){
-    .header-flex{
+    /*.header-flex{
         a{
-            width: 30%;
+            width: 25%;
         }
-        img{
-            width: 40%;
-            min-width: 150px;
-        }
-    }
+    
+    }*/
 }
 /*Création des menus des restaurents*/
 .menu-prev{
@@ -48,7 +46,7 @@ header{
     border-radius: 100px 100px 0 0;
     width: 50%;
     margin-left:1rem;
-    padding: 2rem 0 1rem 0;
+    padding: 2rem 0 0 0;
     border: transparent;
     h1{
          width: 50%;
@@ -82,13 +80,15 @@ header{
     padding:5rem  2rem 1rem 2rem;
     background-color: $color-quaternary;
     width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 .menu-entree{
     margin-top: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 30%;
+    width: 48%;
 }
 .btn-menu{
     width: 100%;
@@ -98,7 +98,7 @@ header{
     animation: animation-check 0.3s forwards;
     -webkit-animation: animation-check 0.3s forwards;
   }
-  &:hover .fa-check-circle{
+   &:hover .fa-check-circle{
         transform: rotate(360deg);
         transition: 0.8s;
   }
@@ -122,30 +122,29 @@ header{
 }
 /*englobe chaque élément du menu*/
 .menu-prev-grid{
+    display:grid;
+    grid-template-columns: 75% 25% 15%;
+    grid-template-rows:50px 50px ;
+    grid-template-areas:"heading heading check"
+    "description price check";
     background-color: $white;
     border-radius: 15px;
     width: 100%;
-    min-width: 300px;
     padding: 0;
     overflow: hidden;
-    display:grid;
-    grid-template-columns: 75% 25% 15%;
-    grid-template-rows:40px 40px ;
-    grid-template-areas:"heading heading check"
-    "description price check";
     h4{
         grid-area: heading;
         text-align: start;
-        padding: 0.7rem  0 0.5rem 1rem;
+        padding: 1rem  0 0.5rem 1rem;
         font-size: 1.7em;
-        @include short;
     }
     .description{
         grid-area: description;
-        padding: 0.5rem 0 1rem 1rem;
         text-align: start;
+        padding: 0 0 1rem 1rem;
         font-size: 1.5em;
-        @include short;
+        display:block;
+        white-space: wrap;
     }
     .price{
         grid-area: price;
@@ -157,10 +156,17 @@ header{
         display: flex;
         justify-content: center;
         align-items: center;
+        height: 100%;
         background-color: $color-tertiary;
         color: $white;
-        height: 100%;
     }
+}
+.btn-menu:hover .description{
+    display:block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    flex-basis:auto;
+    overflow: hidden;
 }
 /*Footer*/
 footer{
@@ -175,7 +181,7 @@ ul{
     padding:15px;
 }
 svg{
-    width: 100%;
+    width: 70%;
     height: auto;
     fill:$white;
     

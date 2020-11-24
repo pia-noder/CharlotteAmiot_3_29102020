@@ -35,15 +35,11 @@
     width: 100%;
     height: 500px;
     border: transparent;
+  @media (max-width:480px){
+        height: 350px;
+    }  
 }
-/*pour cacher les textes des plats*/
-@mixin short{
-    display:block;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    flex-basis:auto;
-    overflow: hidden;
-}
+
 /*pour définir le comportement des images*/
 @mixin images-prev{
     background-size: 100% 100%;

@@ -1,12 +1,12 @@
 /*Adapter le preview au format tablette et mobile*/
 @media(min-width:1500px){
-    .steps{
-        p{
-            font-size: 1.3rem;
-        }
-    }
     .menu-prev{
         height: 700px;
+        &__info{
+            p{
+                font-size: 1.2em;
+            } 
+        }
     }
     a{
         font-size: 1.3em;
@@ -14,6 +14,8 @@
 }
 @media (max-width:1024px){
     .menu-heading{
+        /*pour qu'au format tablette/mobile le nom + coeur 
+        prennent toutes la largeur de la fenêtre*/
         justify-content: space-between;
         width: 100%;
         margin-left:0;
@@ -21,59 +23,61 @@
             margin-left: 2rem;
             font-size:1.7em;
         }
-        p{
-            font-size: 0.8em;
-        }
-    }
-    .info{
-        &__steps{
-            width: 60%;
-        }
     }
     .menu-flex{
+     /*pour faire passer les éléments du menu à la verticale*/
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 100%;
-        padding: 0 0.5rem;
+        padding: 0;
         }
     .resto-prev{
         height: 300px;
      }
-     .info__explain{
-        display:flex;
-        flex-direction: column;
-        justify-content: space-around; 
-        align-items: center;
-        min-height:200px ;
-        .steps{
-            width: 90%;
-            p{
-                font-size: 1.3em;
-            }
+    .info{
+        &__explain{
+        /*pour faire passer les blocs étapes les uns sous les autres*/
+            display:flex;
+            flex-direction: column;
+            justify-content: space-around; 
+            align-items: center;
+            min-height:200px ;
+        }
+        &__steps{
+        /*pour que les blocs prennent*/ 
+                width: 100%;
+                p{
+                    font-size: 1em;
+                }
         }
     }
-}
-@media (min-width:480px) and (max-width:1024px){
-    /*Pour que les éléments contenant le menu s'étendent sur tous l'écran*/
-    .menu-prev-grid{
-        min-width: 450px;
-    }
     .menu-entree{
-        width: 90%;
+    /*pour que les élément du menu prennent 95% du viewport non plus 33%*/
+        width: 95%;
     }
-    
 }
 @media (max-width:768px){
-    .menu-prev{
+    /*.menu-prev{
         height: 300px;
-    }
-     .resto-bloc{
+    }*/
+    .resto-bloc{
         h2{
             padding-left: 2rem;
         }
     }
+    .menu-prev-grid{
+        h4{
+            font-size: 1.2em;
+        }
+        .description{
+            font-size: 1.2em;
+         }
+        p{
+            font-size: 1.1em;
+        }
+    }
     #resto-grid{
+    /*pour faire passer les cartes des restaurants à la verticale*/
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 20rem 20rem 20rem 20rem;
@@ -83,61 +87,38 @@
         width: 90%;
         justify-self: center;
     }
+
     .info{
-        &__steps{
-            width: 100%;
-        }
         p{
+        /*le texte reste sur  ligne à 320px*/
             font-size: 0.6em;
         }
     }
     footer{
-     ul{
-        display:flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        color: $white;
-        background-color:$black;
-        padding:15px;
-    }
-    li{
-        margin-top:5px;
-        a{
-            color:$white;
-            i{
-                margin-right:10px;
+        ul{
+        /*les éléments de liste passent à la verticale*/
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            color: $white;
+            background-color:$black;
+            padding:15px;
+        }
+        li{
+            margin-top:5px;
+            a{
+                color:$white;
+                i{
+                    margin-right:10px;
+                }
             }
         }
-    }
+    } 
 } 
-}  
 @media(max-width:480px){
-    .menu-heading{
-        h1{
-            
-            margin-left: 2rem;
-        }
-    }
-    .menu-entree{
-        width: 95%;
-    }
-    .menu-flex{
-        padding: 0;
-    }
     .resto-prev{
         height: 250px;
-     }
-     .menu-prev-grid{
-         h4{
-             font-size: 1.2em;
-         }
-         .description{
-             font-size: 1.2em;
-         }
-         p{
-             font-size: 1.1em;
-         }
      }
      .presentation{
          a{
@@ -145,5 +126,3 @@
          }
      }
 }
-
-

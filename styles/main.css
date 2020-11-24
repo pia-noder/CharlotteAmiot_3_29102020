@@ -164,7 +164,7 @@
   }
 }
 
-/*aniamtion du loader*/
+/*animation du loader*/
 @-webkit-keyframes animation-rotate {
   to {
     -webkit-transform: rotate(360deg);
@@ -219,7 +219,6 @@
 /*box-shadow des preview*/
 /*barre sous les titres entree/plat/dessert*/
 /*en-tête des menus*/
-/*pour cacher les textes des plats*/
 /*pour définir le comportement des images*/
 * {
   margin: 0;
@@ -243,19 +242,19 @@ h1 {
 }
 
 h4 {
-  font-size: 1.1em;
+  font-size: 1.3em;
 }
 
 .logo {
   font-family: 'Shrikhand', cursive, sans-serif;
-  color: #fff;
-  font-size: 1em;
+  color: #000;
+  font-size: 2.3em;
 }
 
 p {
   font-family: 'Roboto', sans-serif;
   color: #000;
-  font-size: 1.3em;
+  font-size: 1.2em;
 }
 
 li {
@@ -409,26 +408,27 @@ header {
 }
 
 .header-flex a {
-  width: 40%;
-  padding-left: 2rem;
+  width: 10%;
+  padding-left: 1.5rem;
 }
 
 .header-flex a i {
   font-size: 1.2rem;
 }
 
-.header-flex img {
-  width: 20%;
+.header-flex .logo {
+  width: 90%;
+  text-align: center;
+  padding-right: 3em;
 }
 
 @media (max-width: 768px) {
-  .header-flex a {
-    width: 30%;
-  }
-  .header-flex img {
-    width: 40%;
-    min-width: 150px;
-  }
+  /*.header-flex{
+        a{
+            width: 25%;
+        }
+    
+    }*/
 }
 
 /*Création des menus des restaurents*/
@@ -461,7 +461,7 @@ header {
   border-radius: 100px 100px 0 0;
   width: 50%;
   margin-left: 1rem;
-  padding: 2rem 0 1rem 0;
+  padding: 2rem 0 0 0;
   border: transparent;
 }
 
@@ -479,12 +479,24 @@ header {
   border: transparent;
 }
 
+@media (max-width: 480px) {
+  .resto-lafrançaise {
+    height: 350px;
+  }
+}
+
 .resto-laPalette {
   background-image: url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
   background-size: 100% 100%;
   width: 100%;
   height: 500px;
   border: transparent;
+}
+
+@media (max-width: 480px) {
+  .resto-laPalette {
+    height: 350px;
+  }
 }
 
 .resto-leDeliceDesSens {
@@ -495,12 +507,24 @@ header {
   border: transparent;
 }
 
+@media (max-width: 480px) {
+  .resto-leDeliceDesSens {
+    height: 350px;
+  }
+}
+
 .resto-laNoteEnchantee {
   background-image: url(../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
   background-size: 100% 100%;
   width: 100%;
   height: 500px;
   border: transparent;
+}
+
+@media (max-width: 480px) {
+  .resto-laNoteEnchantee {
+    height: 350px;
+  }
 }
 
 /*Les différentes entrées du menu*/
@@ -514,6 +538,10 @@ header {
   padding: 5rem  2rem 1rem 2rem;
   background-color: #f2f2f2;
   width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .menu-entree {
@@ -528,7 +556,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 30%;
+  width: 48%;
 }
 
 .btn-menu {
@@ -579,19 +607,18 @@ header {
 
 /*englobe chaque élément du menu*/
 .menu-prev-grid {
-  background-color: #fff;
-  border-radius: 15px;
-  width: 100%;
-  min-width: 300px;
-  padding: 0;
-  overflow: hidden;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 75% 25% 15%;
       grid-template-columns: 75% 25% 15%;
-  -ms-grid-rows: 40px 40px;
-      grid-template-rows: 40px 40px;
+  -ms-grid-rows: 50px 50px;
+      grid-template-rows: 50px 50px;
       grid-template-areas: "heading heading check" "description price check";
+  background-color: #fff;
+  border-radius: 15px;
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
 }
 
 .menu-prev-grid h4 {
@@ -600,29 +627,19 @@ header {
   -ms-grid-column-span: 2;
   grid-area: heading;
   text-align: start;
-  padding: 0.7rem  0 0.5rem 1rem;
+  padding: 1rem  0 0.5rem 1rem;
   font-size: 1.7em;
-  display: block;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  -ms-flex-preferred-size: auto;
-      flex-basis: auto;
-  overflow: hidden;
 }
 
 .menu-prev-grid .description {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: description;
-  padding: 0.5rem 0 1rem 1rem;
   text-align: start;
+  padding: 0 0 1rem 1rem;
   font-size: 1.5em;
   display: block;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  -ms-flex-preferred-size: auto;
-      flex-basis: auto;
-  overflow: hidden;
+  white-space: wrap;
 }
 
 .menu-prev-grid .price {
@@ -649,9 +666,18 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 100%;
   background-color: #99e2d0;
   color: #fff;
-  height: 100%;
+}
+
+.btn-menu:hover .description {
+  display: block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+  overflow: hidden;
 }
 
 /*Footer*/
@@ -674,7 +700,7 @@ ul {
 }
 
 svg {
-  width: 100%;
+  width: 70%;
   height: auto;
   fill: #fff;
 }
@@ -733,7 +759,7 @@ li a i {
           animation: grow 1.5s linear infinite;
 }
 
-.loader .rotation .cercle:nth-child(2), .loader .rotation .cercle:nth-child(4) {
+.loader .rotation .cercle:nth-child(2) {
   -webkit-animation-delay: 0.5s;
           animation-delay: 0.5s;
   background-color: #ff79da;
@@ -1020,19 +1046,13 @@ li a i {
   padding: 10px 20px;
 }
 
-@media (min-width: 1500px) {
-  .resto-prev__info p {
-    font-size: 1.3rem;
-  }
-}
-
 /*Adapter le preview au format tablette et mobile*/
 @media (min-width: 1500px) {
-  .steps p {
-    font-size: 1.3rem;
-  }
   .menu-prev {
     height: 700px;
+  }
+  .menu-prev__info p {
+    font-size: 1.2em;
   }
   a {
     font-size: 1.3em;
@@ -1041,6 +1061,8 @@ li a i {
 
 @media (max-width: 1024px) {
   .menu-heading {
+    /*pour qu'au format tablette/mobile le nom + coeur 
+        prennent toutes la largeur de la fenêtre*/
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -1051,13 +1073,8 @@ li a i {
     margin-left: 2rem;
     font-size: 1.7em;
   }
-  .menu-heading p {
-    font-size: 0.8em;
-  }
-  .info__steps {
-    width: 60%;
-  }
   .menu-flex {
+    /*pour faire passer les éléments du menu à la verticale*/
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1068,13 +1085,13 @@ li a i {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 100%;
-    padding: 0 0.5rem;
+    padding: 0;
   }
   .resto-prev {
     height: 300px;
   }
   .info__explain {
+    /*pour faire passer les blocs étapes les uns sous les autres*/
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1089,32 +1106,37 @@ li a i {
             align-items: center;
     min-height: 200px;
   }
-  .info__explain .steps {
-    width: 90%;
+  .info__steps {
+    /*pour que les blocs prennent*/
+    width: 100%;
   }
-  .info__explain .steps p {
-    font-size: 1.3em;
-  }
-}
-
-@media (min-width: 480px) and (max-width: 1024px) {
-  /*Pour que les éléments contenant le menu s'étendent sur tous l'écran*/
-  .menu-prev-grid {
-    min-width: 450px;
+  .info__steps p {
+    font-size: 1em;
   }
   .menu-entree {
-    width: 90%;
+    /*pour que les élément du menu prennent 95% du viewport non plus 33%*/
+    width: 95%;
   }
 }
 
 @media (max-width: 768px) {
-  .menu-prev {
-    height: 300px;
-  }
+  /*.menu-prev{
+        height: 300px;
+    }*/
   .resto-bloc h2 {
     padding-left: 2rem;
   }
+  .menu-prev-grid h4 {
+    font-size: 1.2em;
+  }
+  .menu-prev-grid .description {
+    font-size: 1.2em;
+  }
+  .menu-prev-grid p {
+    font-size: 1.1em;
+  }
   #resto-grid {
+    /*pour faire passer les cartes des restaurants à la verticale*/
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr;
@@ -1128,13 +1150,12 @@ li a i {
     -ms-grid-column-align: center;
         justify-self: center;
   }
-  .info__steps {
-    width: 100%;
-  }
   .info p {
+    /*le texte reste sur  ligne à 320px*/
     font-size: 0.6em;
   }
   footer ul {
+    /*les éléments de liste passent à la verticale*/
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1164,26 +1185,8 @@ li a i {
 }
 
 @media (max-width: 480px) {
-  .menu-heading h1 {
-    margin-left: 2rem;
-  }
-  .menu-entree {
-    width: 95%;
-  }
-  .menu-flex {
-    padding: 0;
-  }
   .resto-prev {
     height: 250px;
-  }
-  .menu-prev-grid h4 {
-    font-size: 1.2em;
-  }
-  .menu-prev-grid .description {
-    font-size: 1.2em;
-  }
-  .menu-prev-grid p {
-    font-size: 1.1em;
   }
   .presentation a {
     width: 90%;

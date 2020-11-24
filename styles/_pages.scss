@@ -23,13 +23,13 @@
             box-shadow: 0px 0px 12px 6px #A77CDC;
             transform:scale(0);
             animation: grow 1.5s linear infinite;
-          }
-          .cercle:nth-child(2),.cercle:nth-child(4){
+        }
+        .cercle:nth-child(2){
             animation-delay:0.5s;
             background-color: #ff79da;
             -webkit-box-shadow: 0px 0px 12px 6px #FFAEE8; 
             box-shadow: 0px 0px 12px 6px #FFAEE8;
-          }
+        }
     }
     
 }
@@ -92,8 +92,8 @@
             background-color: lighten($color-secondary,20%);
             .fa-color{
                 color: $color-primary;
-                    }
-             }
+                }
+            }
         figure{
             position: absolute;
             background-color:$color-primary;
@@ -134,13 +134,13 @@
 #resto-grid{
     margin-top: 3rem;
     display: grid;
-   grid-template-columns: 1fr 1fr;
-   grid-template-rows: 1fr 1fr; 
-   grid-template-areas: "resto1 resto3"
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr; 
+    grid-template-areas: "resto1 resto3"
    "resto2 resto4" ;
-   grid-gap:3rem;
-   justify-content: space-around;
-   background-color: $color-quaternary
+    grid-gap:3rem;
+    justify-content: space-around;
+    background-color: $color-quaternary
 }
 .resto-prev1, .resto-prev2{
     width: 80%;
@@ -175,8 +175,6 @@
     background-image: url(../images/resize-restaurant/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
     @include images-prev;
 }
-
-
 .resto-prev4{
     grid-area: resto4;
 }
@@ -184,7 +182,6 @@
     background-image: url(../images/resize-restaurant/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
     @include images-prev;
 }
-
 
 /*englobe le contenu des cartes*/
 .resto-prev{
@@ -229,11 +226,5 @@
     }
    
 }
-@media(min-width:1500px){
-    .resto-prev__info{
-        p{
-            font-size: 1.3rem;
-        }
-    }
-}
+
 
