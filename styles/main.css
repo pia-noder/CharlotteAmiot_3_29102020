@@ -318,14 +318,14 @@ a {
 }
 
 span {
-  background-color: #fff;
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: heart;
-  border-radius: 0 0 10px 0;
   -ms-flex-item-align: center;
       align-self: center;
       justify-self: center;
+  border-radius: 0 0 10px 0;
+  background-color: #fff;
 }
 
 span .icon-color {
@@ -532,16 +532,13 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 5rem  2rem 1rem 2rem;
-  background-color: #f2f2f2;
-  width: 100%;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  padding: 5rem  2rem 1rem 2rem;
+  background-color: #f2f2f2;
 }
 
 .menu-entree {
@@ -730,11 +727,11 @@ li a i {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: white;
   top: 0px;
   left: 0px;
   height: 100%;
   width: 100%;
+  background-color: white;
   -webkit-animation: animation-loader 1s 3s forwards;
           animation: animation-loader 1s 3s forwards;
 }

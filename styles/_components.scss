@@ -34,11 +34,11 @@
     margin-right: 3rem;
 }
 span{
-    background-color: $white;
     grid-area:heart;
-    border-radius:0 0 10px 0;
     align-self: center;
     justify-self: center;
+    border-radius:0 0 10px 0;
+    background-color: $white;
     
     .icon-color{
         transform: scale(0);

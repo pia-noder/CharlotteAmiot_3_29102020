@@ -76,12 +76,11 @@ header{
 /*Les différentes entrées du menu*/
 .menu-flex{
     display:flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
     padding:5rem  2rem 1rem 2rem;
     background-color: $color-quaternary;
-    width: 100%;
-    flex-wrap: wrap;
-    justify-content: space-around;
 }
 .menu-entree{
     margin-top: 2rem;

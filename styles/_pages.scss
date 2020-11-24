@@ -5,11 +5,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: white;
     top : 0px;
     left : 0px;
     height : 100%;
     width : 100%;
+    background-color: white;
     animation: animation-loader 1s 3s forwards;
     .rotation{
         animation: animation-rotate 3s  linear infinite;
