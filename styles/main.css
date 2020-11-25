@@ -419,16 +419,7 @@ header {
 .header-flex .logo {
   width: 90%;
   text-align: center;
-  padding-right: 3em;
-}
-
-@media (max-width: 768px) {
-  /*.header-flex{
-        a{
-            width: 25%;
-        }
-    
-    }*/
+  padding-right: 100px;
 }
 
 /*Création des menus des restaurents*/
@@ -1140,9 +1131,9 @@ li a i {
 }
 
 @media (max-width: 768px) {
-  /*.menu-prev{
-        height: 300px;
-    }*/
+  .header-flex .logo {
+    padding-right: 1px;
+  }
   .resto-bloc h2 {
     padding-left: 2rem;
   }

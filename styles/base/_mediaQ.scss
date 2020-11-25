@@ -57,9 +57,12 @@
     }
 }
 @media (max-width:768px){
-    /*.menu-prev{
-        height: 300px;
-    }*/
+    .header-flex{
+        .logo{
+            padding-right: 1px;
+         } 
+    }
+    
     .resto-bloc{
         h2{
             padding-left: 2rem;
