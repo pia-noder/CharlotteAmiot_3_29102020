@@ -485,6 +485,12 @@ header {
   }
 }
 
+@media (max-width: 400px) {
+  .resto-lafrançaise {
+    height: 290px;
+  }
+}
+
 .resto-laPalette {
   background-image: url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
   background-size: 100% 100%;
@@ -496,6 +502,12 @@ header {
 @media (max-width: 480px) {
   .resto-laPalette {
     height: 350px;
+  }
+}
+
+@media (max-width: 400px) {
+  .resto-laPalette {
+    height: 290px;
   }
 }
 
@@ -513,6 +525,12 @@ header {
   }
 }
 
+@media (max-width: 400px) {
+  .resto-leDeliceDesSens {
+    height: 290px;
+  }
+}
+
 .resto-laNoteEnchantee {
   background-image: url(../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
   background-size: 100% 100%;
@@ -524,6 +542,12 @@ header {
 @media (max-width: 480px) {
   .resto-laNoteEnchantee {
     height: 350px;
+  }
+}
+
+@media (max-width: 400px) {
+  .resto-laNoteEnchantee {
+    height: 290px;
   }
 }
 
