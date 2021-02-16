@@ -5,6 +5,8 @@
   npm install
   npm start
 
+  -This project has some dependencies (icons & font)
+
 ##Description##
 Version 1.0.0
 
